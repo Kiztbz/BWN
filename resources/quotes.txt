@@ -1,0 +1,10 @@
+"The only way to do great work is to love what you do." <br><div class="author">- Steve Jobs </div>
+"In the end, we will remember not the words of our enemies, but the silence of our friends." <br><div class="author">- Martin Luther King Jr. </div>
+"The future belongs to those who believe in the beauty of their dreams." <br><div class="author">- Eleanor Roosevelt </div>
+"Success is not final, failure is not fatal: It is the courage to continue that counts." <br><div class="author">- Winston Churchill </div>
+"The only thing necessary for the triumph of evil is for good men to do nothing." <br><div class="author">- Edmund Burke </div>
+"The best way to predict the future is to create it." <br><div class="author">- Peter Drucker </div>
+"Happiness is not something ready-made. It comes from your own actions." <br><div class="author">- Dalai Lama </div>
+"Life is what happens when you're busy making other plans." <br><div class="author">- John Lennon </div>
+"In three words I can sum up everything I've learned about life: it goes on." <br><div class="author">- Robert Frost </div>
+"The journey of a thousand miles begins with one step." <br><div class="author">- Lao Tzu </div>

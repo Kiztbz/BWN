@@ -1,0 +1,280 @@
+/*Basic settings*/
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/*Root variables*/
+:root {
+  --height: ;
+  --width: ;
+  --LoginY: ;
+  --StartY: ;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  overflow: hidden;
+}
+
+/*FONTS*/
+@font-face {
+  font-family: font1;
+  src: url(resources/fonts/Dela_Gothic_One/DelaGothicOne-Regular.ttf);
+}
+@font-face {
+  font-family: font2;
+  src: url(resources/fonts/Croissant_One/CroissantOne-Regular.ttf);
+}
+
+/*Main element */
+#app {
+  width: var(--width);
+  height: var(--height);
+  display: flex;
+}
+#background {
+  width: var(--width);
+  height: var(--height);
+  display: flex;
+  background-image: url(/images/image6.jpg);
+  /*https://unsplash.com/@jeremybishop*/
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.5) opacity(0.8);
+  position: absolute;
+  transition: 0.03s ease-in-out;
+}
+
+/*Module 1 - LOGO*/
+#mod1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Module 2 - QUOTATION*/
+#mod2 {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  height: 150px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: font2;
+  font-size: 20px;
+}
+
+/*Module 3 - MUSIC*/
+#mod3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 200px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Module 4 - TOOLS*/
+#mod4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Module 5 - CLOCK*/
+#mod5 {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 550px;
+  font-family: font1;
+  z-index: 1;
+}
+
+/*Module 6 - Settings*/
+#mod6 {
+  position: absolute;
+  bottom: 0;
+  right: -50%;
+  height: var(--height);
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  z-index: 1;
+  transition: all 0.25s ease-in-out;
+  border-radius: 1em;
+}
+
+/*LOGO*/
+#logo {
+  font-family: font1;
+  font-size: 60px;
+}
+#tagline {
+  font-family: font1;
+  font-size: 10px;
+}
+
+/*CLOCK*/
+#clock {
+  font-size: 100px;
+}
+
+/*QUOTATIONS*/
+.author {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*MUSIC*/
+#music-box {
+  transition: all 1s ease-in-out;
+  min-width: 300px;
+  height: 80px;
+  background-color: #111;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  z-index: 2;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.btn{
+    background-color: #111;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+    width: 50%;
+    position: absolute;
+    left: 20px;
+    bottom: 130px;
+}
+
+#loginButton
+{
+  z-index: 2;
+  transform: var(--LoginY);
+}
+#startButton
+{
+  z-index: 1;
+  transform: var(--StartY);
+}
+
+
+/* Style the album art */
+.album-art img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-right: 20px;
+  transition: all 1s ease-in-out;
+}
+
+/* Style the song details */
+.song-details {
+  flex: 1;
+  transition: all 1s ease-in-out;
+}
+
+.song-title {
+  font-size: 24px;
+  margin-bottom: 5px;
+  transition: all 1s ease-in-out;
+}
+
+.album-name,
+.artist-name {
+  font-size: 16px;
+  transition: all 1s ease-in-out;
+}
+
+.artist-name {
+  color: #888;
+}
+
+/*TOOLS*/
+#toolbar {
+  width: 180px;
+  height: 60px;
+  background-color: darkslategrey;
+  border-radius: 1em;
+  display: flex;
+}
+.tool {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  background-color: aliceblue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tool img {
+  width: 30px;
+  height: 30px;
+}
+
+/*Settings*/
+#categories {
+  width: 30%;
+  height: 100%;
+}
+#cat-disp {
+  width: 70%;
+  height: 100%;
+  border-left: solid 1px white;
+}
+.cat {
+  height: 50px;
+  width: 100%;
+  display: flex;
+}
+.cat div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-family: font1;
+  font-size: 13px;
+}
+.cat img {
+  filter: brightness(0) invert(1);
+  width: 25px;
+}
+.cat-text {
+  margin-left: 10px;
+}
+
+.catid {
+  display: none;
+}

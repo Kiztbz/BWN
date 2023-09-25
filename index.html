@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ui.css">
+    <title>BlissfulWorkNest</title>
+</head>
+
+<body onresize="HWUpdate()" onload="tick()">
+    <div id="background"></div>
+    <div id="app">
+        <div id="mod1">
+            <div id="logo">BWN</div>
+            <div id="tagline">- Blissful WorkNest -</div>
+        </div>
+        <div id="mod2">
+            <div id="quote"></div>
+        </div>
+        <div id="mod3">
+            <button id="loginButton" class="btn" onclick="checkBtn1()">Log in</button>
+            <button id="startButton" class="btn" onclick="checkBtn2()">Start sync</button>
+            <div id="music-box">
+                <div class="album-art">
+                    <img id="album-art" alt="Album Art" src="/images/spotify.png">
+                </div>
+                <div class="song-details">
+                    <h2 class="song-title" id="song-title">Song Title</h2>
+                    <p class="album-name" id="album-name">Album Name</p>
+                    <p class="artist-name" id="artist-name">Artist Name</p>
+                </div>
+            </div>
+        </div>
+        <div id="mod4">
+            <div id="toolbar">
+                <button class="tool" onclick="BgChange()"><img
+                        src="/resources/icons/sync_FILL0_wght400_GRAD0_opsz24.svg"></button>
+                <button class="tool" onclick="Open()"><img
+                        src="/resources/icons/settings_FILL0_wght400_GRAD0_opsz24.svg"></button>
+                <button class="tool" id="fullscreen"><img
+                        src="/resources/icons/fullscreen_FILL0_wght400_GRAD0_opsz24.svg"></button>
+            </div>
+        </div>
+        <div id="mod5">
+            <div>Life moves pretty fast.<br> Take a break and look around you.</div>
+            <div id="clock" onload="tick()">00:00</div>
+        </div>
+        <div id="mod6">
+            <div id="categories">
+                <div class="cat">
+                    <div><img src="/resources/icons/close_FILL0_wght400_GRAD0_opsz24.svg" onclick="Close()"></div>
+                </div>
+                <div class="cat">
+                    <div><img src="/resources/icons/palette_FILL0_wght400_GRAD0_opsz24.svg"><span
+                            class="cat-text">Themes</span></div>
+                </div>
+                <div class="cat">
+                    <div><img src="/resources/icons/schedule_FILL0_wght400_GRAD0_opsz24.svg"><span
+                            class="cat-text">Clock</span></div>
+                </div>
+                <div class="cat">
+                    <div><img src="/resources/icons/format_quote_FILL0_wght400_GRAD0_opsz24.svg"><span
+                            class="cat-text">Quotes</span></div>
+                </div>
+                <div class="cat">
+                    <div><img src="/resources/icons/headphones_FILL0_wght400_GRAD0_opsz24.svg"><span
+                            class="cat-text">Music</span></div>
+                </div>
+                <div class="cat">
+                    <div><img src="/resources/icons/help_FILL0_wght400_GRAD0_opsz24.svg"><span
+                            class="cat-text">About</span>
+                    </div>
+                </div>
+            </div>
+            <div id="cat-disp">
+                <div id="theme-cat" class="catid">theme</div>
+                <div id="clock-cat" class="catid">clock</div>
+                <div id="quote-cat" class="catid">quote</div>
+                <div id="music-cat" class="catid">music</div>
+                <div id="about-cat" class="catid">about</div>
+            </div>
+        </div>
+    </div>
+    <script src="props.js"></script>
+    <script src="clock.js"></script>
+    <script src="quote.js"></script>
+    <script src="tools.js"></script>
+    <script src="settings.js"></script>
+    <script src="api.js"></script>
+</body>
+
+</html>
