@@ -14,7 +14,7 @@ var f1;
 //ONLOAD 
 window.onload = function () 
 {
-    if(localStorage.getItem('AuthCode') == 'undefined')
+    if(localStorage.getItem('AuthCode') == null)
     localStorage.setItem('LoginY', 'transform(0px)')
     document.documentElement.style.setProperty("--LoginY", localStorage.getItem('LoginY'));
     document.documentElement.style.setProperty("--StartY", localStorage.getItem('StartY'));
