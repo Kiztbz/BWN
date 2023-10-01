@@ -44,9 +44,37 @@
         </div>
         <div id="mod5">
             <div>Life moves pretty fast.<br> Take a break and look around you.</div>
-            <div id="clock" onload="tick()">00:00</div>
+            <div id="clock-mod"><div id="clock" onload="tick()">00:00</div><div id="secs"></div></div>
         </div>
         <div id="mod6">
+            <div class="settings-panel">
+                <div class="cat">
+                    <div><img src="/resources/icons/close_FILL0_wght400_GRAD0_opsz24.svg" onclick="Close()"></div>
+                </div>
+                <h2>App Settings</h2>
+                <div class="setting">
+                    <label for="dark-mode">Dark Mode:</label>
+                    <input type="checkbox" id="dark-mode" name="dark-mode">
+                </div>
+                <div class="setting">
+                    <label for="notifications">Notifications:</label>
+                    <input type="checkbox" id="notifications" name="notifications">
+                </div>
+                <div class="setting">
+                    <label for="volume">Volume:</label>
+                    <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+                </div>
+                <div class="setting">
+                    <label for="language">Language:</label>
+                    <select id="language" name="language">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                    </select>
+                </div>
+                <button class="save-button">Save</button>
+            </div>
+            <!--
             <div id="categories">
                 <div class="cat">
                     <div><img src="/resources/icons/close_FILL0_wght400_GRAD0_opsz24.svg" onclick="Close()"></div>
@@ -80,6 +108,7 @@
                 <div id="music-cat" class="catid">music</div>
                 <div id="about-cat" class="catid">about</div>
             </div>
+            -->
         </div>
     </div>
     <script src="props.js"></script>

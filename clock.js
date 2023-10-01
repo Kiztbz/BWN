@@ -1,12 +1,21 @@
+var time;
+var secs;
 tick();
 async function tick() {
   var today = new Date();
+  time = today.getHours();
   if (today.getMinutes() < 10) {
-    time = today.getHours() + ":0" + today.getMinutes();
+    time = time + ":0" + today.getMinutes();
   } else {
-    time = today.getHours() + ":" + today.getMinutes();
+    time = time + ":" + today.getMinutes();
   }
-  document.getElementById("clock").innerHTML = "&nbsp;" + time;
+  document.getElementById("clock").innerHTML = time;
+  if (today.getSeconds() < 10) {
+    secs = ".0" + today.getSeconds();
+  } else {
+    secs = "." + today.getSeconds();
+  }
+  document.getElementById("secs").innerHTML = secs;
   await sleep(1000);
   tick();
 }

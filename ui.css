@@ -138,6 +138,21 @@ html::-webkit-scrollbar {
 /*CLOCK*/
 #clock {
   font-size: 100px;
+  min-width: 50%;
+  margin-left: auto;
+  transition: all 0.5s ease-in-out;
+}
+#secs
+{
+  font-size: 40px;
+  min-width: 20%;
+  transition: all 0.5s ease-in-out;
+}
+#clock-mod{
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
 }
 
 /*QUOTATIONS*/
@@ -233,7 +248,7 @@ html::-webkit-scrollbar {
   width: 40px;
   height: 40px;
   margin: auto;
-  background-color: aliceblue;
+  background-color: white;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -277,4 +292,52 @@ html::-webkit-scrollbar {
 
 .catid {
   display: none;
+}
+
+/*GPT SETTINGS*/
+
+.settings-panel {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.setting {
+  margin-bottom: 15px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
+
+input[type="checkbox"],
+input[type="range"],
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button.save-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.save-button:hover {
+  background-color: #0056b3;
 }

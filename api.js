@@ -1,5 +1,5 @@
 const clientId = "b6097dd7b34f4722aa77228496d0ceb6"; // Replace with your Spotify API Client ID
-const redirectUri = "http://127.0.0.1:5500/"; // Replace with your Redirect URI
+const redirectUri = "https://127.0.0.1:5500"; // Replace with your Redirect URI
 const clientSecret = "b59fb33feb0242a9947998c094060655"; // Replace with your actual Client Secret
 const scope = "user-read-playback-state user-modify-playback-state user-read-currently-playing, streaming"; // Add the desired scopes
 const responseType = "code";
@@ -125,8 +125,8 @@ function refreshTokenValidity()
     })
     .then((data) => {
         // Handle the new access token in the response
-        const accessToken = data.access_token;
-        console.log('New access token:', accessToken);
+        localStorage.setItem('AccessToken', data.access_token);
+        console.log('New access token:', localStorage.getItem('AccessToken'));
     })
     .catch((error) => {
         console.error('Error:', error);
@@ -240,6 +240,7 @@ function getCurrentTrackInfo()
         })
         .catch((error) => {
             console.error("Error:", error);
+            refreshTokenValidity();
         });
 }
 
