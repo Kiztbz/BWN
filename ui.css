@@ -112,17 +112,17 @@ html::-webkit-scrollbar {
 /*Module 6 - Settings*/
 #mod6 {
   position: absolute;
-  bottom: 0;
-  right: -50%;
   height: var(--height);
-  width: 50%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: black;
-  z-index: 1;
-  transition: all 0.25s ease-in-out;
-  border-radius: 1em;
+  background-size: cover;
+  filter: opacity(0) ;
+  backdrop-filter: blur(6px);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
 }
 
 /*LOGO*/
@@ -298,10 +298,12 @@ html::-webkit-scrollbar {
 
 .settings-panel {
   max-width: 400px;
-  margin: 0 auto;
+  max-height: 400px;
+  margin: auto;
   padding: 20px;
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
 }
 
 h2 {
@@ -310,34 +312,46 @@ h2 {
 }
 
 .setting {
-  margin-bottom: 15px;
+  display: flex;
+  margin: 20px 10px ;
+  font-family: font1;
 }
 
-label {
+.setting label {
   display: inline-block;
-  width: 150px;
+  width: 250px;
   font-weight: bold;
 }
 
-input[type="checkbox"],
-input[type="range"],
+input,
 select {
   width: 100%;
   padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button.save-button {
-  display: block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  border-radius: 50;
 }
 
 button.save-button:hover {
   background-color: #0056b3;
+}
+
+#settings-header{
+  display: flex;
+}
+
+.settings-header-element{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.she1{
+  width: 20%;
+}
+.she2{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-family: font1;
 }
