@@ -15,6 +15,7 @@ html::-webkit-scrollbar {
   padding: 0px;
   color: white;
   overflow: hidden;
+  transition: all 0.2s ease-in-out;
 }
 
 /*FONTS*/
@@ -119,10 +120,9 @@ html::-webkit-scrollbar {
   justify-content: center;
   background-color: black;
   background-size: cover;
-  filter: opacity(0) ;
-  backdrop-filter: blur(6px);
+  filter: opacity(0);
   z-index: -1;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /*LOGO*/
