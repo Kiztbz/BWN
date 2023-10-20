@@ -132,8 +132,7 @@ html::-webkit-scrollbar {
   left: 35px;
   width: 300px;
   height: 150px;
-  display: flex;
-  flex-direction: column;
+  z-index: -1;
 }
 
 /*LOGO*/
@@ -387,8 +386,8 @@ button.save-button:hover {
 .spectrum-segment {
   background: #111;
   margin: 0 auto;
-  height: 200%;
+  height: 250%;
   transition: transform 600ms linear;
-  width: 10px;
+  width: 100%;
   border-radius: 1px;
 }
