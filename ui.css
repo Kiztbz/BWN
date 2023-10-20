@@ -42,7 +42,7 @@ html::-webkit-scrollbar {
   /*https://unsplash.com/@jeremybishop*/
   background-position: center;
   background-size: cover;
-  filter: brightness(0.5) opacity(0.8);
+  filter: brightness(0.4) opacity(0.9);
   position: absolute;
   transition: 0.03s ease-in-out;
 }
@@ -83,6 +83,7 @@ html::-webkit-scrollbar {
   width: 450px;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 /*Module 4 - TOOLS*/
@@ -132,7 +133,7 @@ html::-webkit-scrollbar {
   left: 35px;
   width: 300px;
   height: 150px;
-  z-index: -1;
+  z-index: 0;
 }
 
 /*LOGO*/
