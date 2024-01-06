@@ -74,7 +74,6 @@
   /*music*/
   #music-cont {
     width: 100%;
-    background-color: white;
   }
   #muic-box {
     width: 100%;
@@ -92,6 +91,10 @@
   }
   #secs {
     font-size: 40px;
+  }
+  /*tools*/
+  #toolbar {
+    width: 300px;
   }
 }
 
