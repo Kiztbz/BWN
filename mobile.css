@@ -32,10 +32,7 @@
   position: absolute;
   bottom: 200px;
   height: 100px;
-  width: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 1;
 }
 
 /*Module 5 - CLOCK*/
