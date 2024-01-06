@@ -72,8 +72,9 @@
   /*music*/
   #muic-box {
     left: 0px;
+    bottom: 0px;
     margin-left: auto; 
-  margin-right: auto
+    margin-right: auto
   }
 
   /*clock*/
