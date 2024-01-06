@@ -65,6 +65,6 @@
   transition: all 0.3s ease-in-out;
   }
   #mod7 {
-    display: hidden;
+    display: none;
   }
 }
