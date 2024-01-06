@@ -66,4 +66,10 @@
   #mod7 {
     display: none;
   }
+
+  /*music*/
+  .btn {
+    margin-left: auto; 
+  margin-right: auto
+  }
 }
