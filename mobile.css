@@ -20,7 +20,8 @@
 /*Module 3 - MUSIC*/
 #mod3 {
   width: 100%;
-  bottom: 10px;
+  bottom: 0px;
+  left: 0px;
   height: 200px;
   display: flex;
   flex-direction: column;
