@@ -38,15 +38,10 @@
 
 /*Module 5 - CLOCK*/
 #mod5 {
-  margin: auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  width: 550px;
-  font-family: font1;
-  z-index: 1;
-  font-size: 20px !important;
+  left: 0px;
+  right: 0px;
+  margin-left: auto; 
+  margin-right: auto
 }
 
 /*Module 6 - Settings*/
@@ -79,7 +74,7 @@
     display: none;
   }
   #clock {
-    font-size: 50px;
+    font-size: 80px;
   }
   #secs {
     font-size: 30px;
