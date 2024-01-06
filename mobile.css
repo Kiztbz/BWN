@@ -17,6 +17,8 @@
     position: relavite;
     width: 95%;
     margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Module 3 - MUSIC*/
@@ -82,7 +84,7 @@
     font-size: 80px;
   }
   #secs {
-    font-size: 30px;
+    font-size: 35px;
   }
 }
 
