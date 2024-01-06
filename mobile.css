@@ -1,4 +1,5 @@
-@media only screen and (max-width: 1024px)
+/*mobile*/
+@media only screen and (max-width: 480px)
 {
   body{
     overflow: hidden;
@@ -84,3 +85,6 @@
     font-size: 30px;
   }
 }
+
+/*tablet*/
+@media only screen and (max-width: 1024px)
