@@ -75,6 +75,9 @@
   }
 
   /*clock*/
+  #mod5-quote {
+    display: none;
+  }
   #clock {
     font-size: 50px;
   }
