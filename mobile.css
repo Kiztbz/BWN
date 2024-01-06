@@ -11,14 +11,14 @@
   /*Module 2 - QUOTATION*/
   #mod2 {
     position: relavite;
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 
 /*Module 3 - MUSIC*/
 #mod3 {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   height: 200px;
   width: 450px;
@@ -42,7 +42,6 @@
 /*Module 5 - CLOCK*/
 #mod5 {
   margin: auto;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -50,6 +49,7 @@
   width: 550px;
   font-family: font1;
   z-index: 1;
+  
 }
 
 /*Module 6 - Settings*/
