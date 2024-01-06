@@ -30,7 +30,8 @@
   width: 100%;
   height: 200px;
   margin-left: auto; 
-  margin-right: auto
+  margin-right: auto;
+  background-color: white;
 }
 
 /*Module 4 - TOOLS*/
