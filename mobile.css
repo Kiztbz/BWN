@@ -8,6 +8,7 @@
   
   #mod1 {
   top: 400px;
+    display: hidden;
   }
 
   /*Module 2 - QUOTATION*/
@@ -62,5 +63,8 @@
   filter: opacity(0);
   z-index: -1;
   transition: all 0.3s ease-in-out;
+  }
+  #mod7 {
+    display: hidden;
   }
 }
