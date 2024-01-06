@@ -1,1 +1,77 @@
-css
+#mod1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Module 2 - QUOTATION*/
+#mod2 {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  height: 150px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: font2;
+  font-size: 20px;
+}
+
+/*Module 3 - MUSIC*/
+#mod3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 200px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+/*Module 4 - TOOLS*/
+#mod4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Module 5 - CLOCK*/
+#mod5 {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 550px;
+  font-family: font1;
+  z-index: 1;
+}
+
+/*Module 6 - Settings*/
+#mod6 {
+  position: absolute;
+  height: var(--height);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  background-size: cover;
+  filter: opacity(0);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+  }
