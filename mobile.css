@@ -34,6 +34,10 @@
   bottom: 0px;
   height: 100px;
   z-index: 2;
+  left: 0px;
+  right: 0px;
+  margin-left: auto; 
+  margin-right: auto;
 }
 
 /*Module 5 - CLOCK*/
@@ -41,7 +45,7 @@
   left: 0px;
   right: 0px;
   margin-left: auto; 
-  margin-right: auto
+  margin-right: auto;
 }
 
 /*Module 6 - Settings*/
