@@ -72,8 +72,7 @@
   /*music*/
   #muic-box {
     width: 100%;
-    left: 0px;
-    bottom: 0px;
+    position: relative;
     margin-left: auto; 
     margin-right: auto
   }
