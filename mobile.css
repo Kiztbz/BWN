@@ -23,9 +23,8 @@
 
 /*Module 3 - MUSIC*/
 #mod3 {
+  position: relative;
   width: 100%;
-  bottom: 0px;
-  left: 0px;
   height: 200px;
   margin-left: auto; 
   margin-right: auto
