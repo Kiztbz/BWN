@@ -73,4 +73,12 @@
     margin-left: auto; 
   margin-right: auto
   }
+
+  /*clock*/
+  #clock {
+    font-size: 50px;
+  }
+  #secs {
+    font-size: 30px;
+  }
 }
