@@ -32,7 +32,7 @@
 /*Module 4 - TOOLS*/
 #mod4 {
   position: absolute;
-  bottom: 200px;
+  bottom: 0px;
   height: 100px;
   z-index: 2;
 }
