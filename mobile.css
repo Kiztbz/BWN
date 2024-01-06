@@ -30,10 +30,10 @@
 /*Module 4 - TOOLS*/
 #mod4 {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 200px;
   height: 100px;
-  width: 300px;
+  width: 60%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
